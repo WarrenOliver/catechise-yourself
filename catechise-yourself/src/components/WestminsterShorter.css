@@ -1,0 +1,61 @@
+.westminster-section {
+    background-color: #f8f9fa; /* Light grey background for better contrast */
+    padding: 2rem;
+    margin: 2rem auto 1rem auto; /* Increased margin-top to 2rem */
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.westminster-title {
+    color: #212529; /* Dark grey for better visibility */
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+.westminster-links {
+    width: 100%;
+    max-width: 600px; /* Adjust max-width as needed */
+    margin-top: 1rem;
+}
+
+.westminster-links p {
+    margin: 0.5rem 0;
+}
+
+.westminster-links a {
+    display: block;
+    background-color: #ffffff;
+    color: #212529; /* Dark grey */
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.westminster-links a:hover {
+    background-color: #f9f9f979; /* Slightly lighter grey for hover state */
+    color: #212529; /* Keep the text color the same */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .westminster-section {
+        padding: 1rem;
+        margin: 1rem 0.5rem 0.5rem 0.5rem; /* Adjusted margins for smaller screens */
+    }
+
+    .westminster-title {
+        font-size: 28px;
+    }
+
+    .westminster-links a {
+        padding: 0.5rem;
+    }
+}

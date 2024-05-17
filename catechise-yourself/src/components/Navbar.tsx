@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
+import './Navbar.css'; // Import the CSS file for styling
 
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <a href="/react-blog"><h1>Warren's Blog</h1></a>
+            <Link to="/" className="logo"><h1>Catechise Yourself</h1></Link>
             <div className="links">
-                <Link to="/react-blog">Home</Link>
-                <Link to="/react-blog/create">New Blog</Link>
+                <Link to="/">Home</Link>
+                <Link to="/resources">Resources</Link>
+                <Link to="/westminster-shorter">Shorter Catechism</Link>
             </div>
         </nav>
     );
 }
- 
+
 export default Navbar;
